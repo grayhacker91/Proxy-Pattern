@@ -11,7 +11,6 @@ public class RMIClient {
 					"rmi://" + server + "/DateServer";
 			//get a proxy for the remote object
 			RemoteDate ds = (RemoteDate)Naming.lookup(host);
-			System.out.println("되라");
 			System.out.println(ds.getDate());
 		} catch (Exception e) { }
 	}  
