@@ -18,7 +18,7 @@ public class GumballMachineTestDrive {
 
 			gumballMachine = 
 				new GumballMachine(args[0], count);
-			Naming.rebind("//" + args[0] + "/gumballmachine", gumballMachine);
+			Naming.rebind(args[0], gumballMachine);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
